@@ -14,3 +14,49 @@
   margin-left: auto; 
   margin-right: auto;
 }
+
+.full-screen { 
+  min-height: 100svh;
+}
+
+h1 { 
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: theme("colors.black")
+}
+
+h2 { 
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: theme("colors.black");
+}
+
+h3 { 
+  font-size: 1rem;
+  font-weight: bold;
+  color: theme("colors.black"); 
+}
+
+nav, nav * { 
+  background-color: theme("colors.green-primary");
+}
+
+@media (max-width: 768px) {
+  .container { 
+    max-width: calc(100% - 2.5rem);
+    margin-left: auto; 
+    margin-right: auto;
+  } 
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 { 
+    font-size: 0.75rem;
+  }
+}
