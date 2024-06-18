@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors') 
 const itemRoutes = require('./routes/items')
+const orderRoutes = require('./routes/orders') 
 
 const app = express()  
 
@@ -18,6 +19,7 @@ app.use((request, response, next) => {
 
 // Routes 
 app.use('/api/items/', itemRoutes)
+app.use('/api/orders/', orderRoutes)
 
 // Database Connection & Server Initialization  
 mongoose.connect(process.env.MONGO_URL)

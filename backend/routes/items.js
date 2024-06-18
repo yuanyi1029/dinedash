@@ -1,7 +1,7 @@
 const express = require('express') 
 const router = express.Router() 
 
-const { getItems, getItem, createItem } = require('../controllers/itemController') 
+const { getItems, getItem, createItem } = require('../controllers/itemsController') 
 
 // GET 
 router.get('/', getItems)
